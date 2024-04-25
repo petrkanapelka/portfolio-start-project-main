@@ -3,12 +3,12 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { SectionTitle } from '../../../components/SectionTitle';
 import { Skill } from './skill/Skill';
 
-const lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem veniam neque adipisci facilis id dolorum aperiam corporis culpa alias beatae esse quis libero saepe perspiciatis velit facere natus, non architecto!"
+export const lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem veniam neque adipisci facilis id dolorum aperiam corporis culpa alias beatae esse quis libero saepe perspiciatis velit facere natus, non architecto!"
 
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle></SectionTitle>
+            <SectionTitle>Skills</SectionTitle>
             <FlexWrapper wrap='wrap'>
                 <Skill iconID='code' title='HTML5' text={lorem}/>
                 <Skill iconID='css' title='CSS' text={lorem}/>
