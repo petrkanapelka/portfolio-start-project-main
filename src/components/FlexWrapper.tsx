@@ -13,5 +13,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     justify-content: ${props => props.justify || 'center'};
     align-items: ${props => props.align || 'center'};
     flex-wrap: ${props => props.wrap || 'nowrap'};
-    flex-direction: ${props => props.wrap || 'row'};
+    flex-direction: ${props => props.direction || 'row'};
 `
