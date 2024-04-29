@@ -5,16 +5,20 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 
 export const Main = () => {
     return (
-        <FlexWrapper justify='space-around'>
-            <div>
-                <span>Hi There</span>
-                <StyledSubTitle>I am Petr Kanapelka</StyledSubTitle>
-                <StyledTitle>A Front-end Developer</StyledTitle>
-            </div>
-            <StyledImg src={photo} alt='photo'/>
-        </FlexWrapper>
+        <StyledMain>
+            <FlexWrapper justify='space-around'>
+                <div>
+                    <span>Hi There</span>
+                    <StyledSubTitle>I am Petr Kanapelka</StyledSubTitle>
+                    <StyledTitle>A Front-end Developer</StyledTitle>
+                </div>
+                <StyledImg src={photo} alt='photo'/>
+            </FlexWrapper>
+        </StyledMain>
     );
 };
+
+const StyledMain = styled.section``;
 
 const StyledImg = styled.img`
     width: 350px;
