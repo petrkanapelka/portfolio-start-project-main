@@ -11,22 +11,22 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconID='instagram'height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
+                            <Icon iconID='instagram' height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconID='vk'height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
+                            <Icon iconID='vk' height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconID='telegram'height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
+                            <Icon iconID='telegram' height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconID='linkedin'height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
+                            <Icon iconID='linkedin' height='21px' width='21px' viewBox='0 0 21px 21px'></Icon>
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -50,7 +50,7 @@ const SocialList = styled.ul`
     list-style-type: none;
 `
 
-const SocialLink =styled.li``
+const SocialLink = styled.li``
 
 const SocialItem = styled.div``
 

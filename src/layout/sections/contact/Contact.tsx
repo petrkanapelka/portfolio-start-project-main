@@ -8,9 +8,9 @@ export const Contact = () => {
         <StyledContact>
             <SectionTitle>Contact</SectionTitle>
             <StyledForm>
-                <Field placeholder='Name'/>
-                <Field placeholder='Lastname'/>
-                <Field placeholder='Write Message' as={'textarea'}/>
+                <Field placeholder='Name' />
+                <Field placeholder='Lastname' />
+                <Field placeholder='Write Message' as={'textarea'} />
                 <Button type='submit'>Send Message</Button>
             </StyledForm>
         </StyledContact>
@@ -19,7 +19,6 @@ export const Contact = () => {
 
 const StyledContact = styled.section`
     min-height:50vh;
-    background-color: #b1f866db;
 `
 
 const StyledForm = styled.form`
