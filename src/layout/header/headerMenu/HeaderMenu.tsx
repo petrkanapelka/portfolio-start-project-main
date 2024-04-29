@@ -34,7 +34,7 @@ const StyledHeaderMenu = styled.nav`
 
 
 const Link = styled.a`
-    font-family: "Josephin Sans", sans-serif;
+    font-family: ${myTheme.fonts.secondaryFamily};
     font-weight: 400;
     font-size: 30px;
     text-align: center;
