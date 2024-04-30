@@ -28,18 +28,11 @@ const StyledSkill = styled.div`
     padding: 62px 20px 40px;
 `
 const SkillTitle = styled.div`
-    font-family: ${myTheme.fonts.secondaryFamily};
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 70px 0 15px;
 `
 const SkillText = styled.div`
     text-align: center;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.4;
 `
 
 const IconWrapper = styled.div`
