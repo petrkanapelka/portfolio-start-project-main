@@ -24,6 +24,7 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: ${myTheme.colors.font}
     }
 
     ul {
@@ -33,6 +34,8 @@ export const GlobalStyle = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
+        cursor: pointer;
+        color: ${myTheme.colors.font};
     }
 
     section {
@@ -45,5 +48,18 @@ export const GlobalStyle = createGlobalStyle`
 
     section:nth-of-type(even) {
         background-color: ${myTheme.colors.secondaryBg};
+    }
+
+    h3 {
+        font-family: ${myTheme.fonts.secondaryFamily};
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.06em;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.4;
     }
     `
