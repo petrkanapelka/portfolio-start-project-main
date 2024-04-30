@@ -3,7 +3,9 @@ export const myTheme = {
         primaryBg: "#1F1F20",
         secondaryBg: "#252527",
         accent: "#7572D5",
-        font: "#FFFFFF"
+        font: "#FFFFFF",
+        placeholderColor:  '#495057',
+        borderColor: "#4a4a4a"
     },
     fonts: {
         primaryFamily: "'Poppins', sans-serif",
