@@ -10,5 +10,10 @@ export const myTheme = {
     fonts: {
         primaryFamily: "'Poppins', sans-serif",
         secondaryFamily: "'Josefin Sans', sans-serif"
+    },
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)",
     }
 };
