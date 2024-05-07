@@ -24,8 +24,13 @@ export const Skill = (props: SkillPropsType) => {
 };
 
 const StyledSkill = styled.div`
-    width: 380px;
+    width: 330px;
+    flex-grow: 1;
     padding: 62px 20px 40px;
+
+    @media ${myTheme.media.mobile} {
+        padding: 62px 0 40px;
+    }
 `
 const SkillTitle = styled.div`
     text-transform: uppercase;
