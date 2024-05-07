@@ -31,13 +31,19 @@ export const Work = (props: WorkPropsType) => {
 const StyledWork = styled.div`
     border-color: ${myTheme.colors.secondaryBg};
     max-width: 540px;
-    width: 100%;
+    width: 330px;
+    flex-grow: 1;
+
     ${Link} {
         padding: 10px 0;
 
         & + ${Link} {
             margin-left: 20px;
         }
+    }
+
+    @media ${myTheme.media.desktop}{
+        max-width: 540px;
     }
 `
 const Description = styled.div`
@@ -46,21 +52,7 @@ const Description = styled.div`
 
 const ImageWrapper = styled.div`
     position: relative;
-    &:hover {
-        &::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            backdrop-filter: blur(8px);
-            background: rgba(0, 0, 0, 0.3);
-        }
-        ${Button} {
-            transform: translate(-50%, -50%) scale(1);
-        }
-    }
+
     ${Button} {
         transform: scale(0);
         position: absolute;
@@ -70,6 +62,38 @@ const ImageWrapper = styled.div`
         &::before {
             width: 100%;
             height: 100%;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        backdrop-filter: blur(8px);
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+    }
+
+    &:hover {
+        &::before {
+            opacity: 1;
+        }
+
+        ${Button} {
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+
+    @media ${myTheme.media.tablet} {
+        &::before {
+            opacity: 1;
+        }
+
+        ${Button} {
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 `
