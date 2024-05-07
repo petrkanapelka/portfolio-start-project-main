@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${myTheme.colors.font};
         line-height: 1.2;
+        min-width: 360px;
     }
 
     code {
