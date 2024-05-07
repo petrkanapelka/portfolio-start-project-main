@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
 import { FlexWrapper } from '../../components/FlexWrapper';
 import { myTheme } from '../../styles/Theme';
+import { font } from '../../styles/Common';
 
 export const Footer = () => {
     return (
@@ -47,6 +48,8 @@ const Name = styled.h4`
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 3px;
+
+    ${font({weight: 700, Fmax: 22, Fmin: 16, family: myTheme.fonts.primaryFamily})};
 `
 
 const SocialList = styled.ul`
