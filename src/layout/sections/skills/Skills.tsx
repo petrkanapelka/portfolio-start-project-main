@@ -10,7 +10,7 @@ export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <SectionTitle>Skills</SectionTitle>
+                <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap='wrap'>
                     <Skill iconID='code' title='HTML5' text={lorem}/>
                     <Skill iconID='css' title='CSS' text={lorem}/>
