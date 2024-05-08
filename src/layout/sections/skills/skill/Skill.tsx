@@ -26,7 +26,7 @@ export const Skill = (props: SkillPropsType) => {
 const StyledSkill = styled.div`
     width: 330px;
     flex-grow: 1;
-    padding: 62px 20px 40px;
+    padding: 40px 20px 14px;
 
     @media ${myTheme.media.mobile} {
         padding: 62px 0 40px;
@@ -35,6 +35,8 @@ const StyledSkill = styled.div`
 const SkillTitle = styled.div`
     text-transform: uppercase;
     margin: 70px 0 15px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 `
 const SkillText = styled.div`
     text-align: center;
