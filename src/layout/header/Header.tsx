@@ -1,36 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import styled from 'styled-components';
 import { Logo } from '../../components/logo/Logo';
 import { Container } from '../../components/Container';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { myTheme } from '../../styles/Theme';
-import { HeaderMenu } from './headerMenu/HeaderMenu';
-import { MobileMenu } from './mobileMenu/MobileMenu';
+import { DesktopMenu } from './headerMenu/desktopMenu/DesktopMenu';
+import { MobileMenu } from './headerMenu/mobileMenu/MobileMenu';
+import { S } from './Header_Styles';
 
 const navItems = ['Home', 'Skills', 'Works', 'Testimony', 'Contacts']
-export const Header = () => {
+
+export const Header: React.FC = () => {
+    const [width, setWidth] = React.useState(window.innerWidth);
+    const breakpoint = 768;
+
+    React.useEffect(() => {
+        const handleWindowResize = () => setWidth(window.innerWidth)
+        window.addEventListener("resize", handleWindowResize);
+
+        return () => window.removeEventListener("resize", handleWindowResize);
+    }, []);
+
     return (
-        <StyledHeader>
+        <S.Header>
             <Container>
                 <FlexWrapper justify='space-between' align='center'>
                     <Logo />
-                    <HeaderMenu menuItems={navItems} />
-                    <MobileMenu menuItems={navItems}/>
+
+                    {width < breakpoint ? <MobileMenu menuItems={navItems} />
+                                        : <DesktopMenu menuItems={navItems} />}
+
                 </FlexWrapper>
             </Container>
-        </StyledHeader>
+        </S.Header>
     );
 };
-
-const StyledHeader = styled.header`
-    display: flex;
-    justify-content: space-between;
-    background-color: ${myTheme.colors.secondaryBg};
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-`
