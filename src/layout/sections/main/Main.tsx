@@ -27,7 +27,6 @@ export const Main = () => {
 const PhotoWrapper = styled.div`
     position: relative;
     z-index: 0;
-    margin-top: 65px;
     &::before {
         content: "";
         width: 360px;
@@ -42,6 +41,10 @@ const PhotoWrapper = styled.div`
             width: 314px;
             height: 414px;
         }
+    }
+
+    @media ${myTheme.media.mobile} {
+     margin-top: 65px;
     }
 `
 
