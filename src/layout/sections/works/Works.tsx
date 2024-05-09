@@ -7,7 +7,7 @@ import timerImg from '../../../assets/images/proj-2.webp';
 import { lorem } from '../skills/Skills';
 import { Container } from '../../../components/Container';
 import React from 'react';
-import { S } from './work/Works_Styles';
+import { S } from './Works_Styles';
 
 const worksItems = ['ALL', 'LANDING PAGE', 'REACT', 'SPA'];
 
