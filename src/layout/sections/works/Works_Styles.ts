@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Button } from "../../../../components/Button";
-import { FlexWrapper } from "../../../../components/FlexWrapper";
-import { Link } from "../../../../components/Link";
-import { myTheme } from "../../../../styles/Theme";
+import { Button } from "../../../components/Button";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { Link } from "../../../components/Link";
+import { myTheme } from "../../../styles/Theme";
 
 const Works = styled.section`
   ${FlexWrapper} {
