@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '../../../../components/Link';
 import { Button } from '../../../../components/Button';
-import { S } from './Works_Styles';
+import { S } from '../Works_Styles';
 
 type WorkPropsType = {
     title: string
