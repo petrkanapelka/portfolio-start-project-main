@@ -1,63 +1,23 @@
-import styled from 'styled-components';
+import React from 'react';
 import { lorem } from '../../layout/sections/skills/Skills';
 import { FlexWrapper } from '../FlexWrapper';
-import { myTheme } from '../../styles/Theme';
+import { S } from './Slider_Styles';
 
-export const Slider = () => {
+export const Slider: React.FC = () => {
     return (
-        <StyledSlider>
+        <S.Slider>
             <FlexWrapper>
-                <Slide>
-                    <Text>{lorem}</Text>
-                    <Name>@Ivan Ivanov</Name>
-                </Slide>
+                <S.Slide>
+                    <S.Text>{lorem}</S.Text>
+                    <S.Name>@Ivan Ivanov</S.Name>
+                </S.Slide>
             </FlexWrapper>
-            <Pagination>
+            <S.Pagination>
                 <span></span>
                 <span className='active'></span>
                 <span></span>
-            </Pagination>
-        </StyledSlider>
+            </S.Pagination>
+        </S.Slider>
     );
 };
 
-const StyledSlider = styled.div`
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    text-align: center;
-`
-
-const Slide = styled.div``
-
-const Text = styled.p``
-
-const Name = styled.span`
-    font-family: ${myTheme.fonts.secondaryFamily};
-    font-weight: 600;
-    font-size: 16px;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 12px 0 26px;
-    display: inline-block;
-`
-
-const Pagination = styled.div`
-    span {
-        display: inline-block;
-        border-radius: 20px;
-        width: 7px;
-        height: 7px;
-        background-color: rgba(255, 255, 255, 0.5);
-
-        & + span {
-            margin-left: 5px;
-        }
-        &.active {
-            background-color: ${myTheme.colors.accent};
-            width: 20px;
-        }
-    }
-
-`
