@@ -45,6 +45,9 @@ const Photo = styled.img`
 
 const MainTitle = styled.h1`
     ${font({family: myTheme.fonts.primaryFamily, weight: 400, Fmax: 27, Fmin: 20})};
+    p {
+        display: none;
+    }
 `
 const Name = styled.h1`
     ${font({family: myTheme.fonts.secondaryFamily, weight: 700, Fmax: 50, Fmin: 36})};
