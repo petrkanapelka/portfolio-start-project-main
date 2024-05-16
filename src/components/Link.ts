@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { myTheme } from "../styles/Theme";
 
-export const Link = styled.a`
+export const Link = styled.a<{active?: boolean}>`
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.07em;
@@ -27,5 +27,10 @@ export const Link = styled.a`
         height: 10px;
         transform: scale(0);
         transition: all 0.3s ease-in-out;
+
+        ${props => props.active && css<{active?: boolean}>`
+            height: 10px;
+            transform: scale(1);
+        `}
     }
 `
