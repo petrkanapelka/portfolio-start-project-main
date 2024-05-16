@@ -1,13 +1,6 @@
 import styled, { css } from "styled-components";
 import { myTheme } from "../../../styles/Theme";
-
-const Link = styled.a`
-  font-family: ${myTheme.fonts.secondaryFamily};
-  font-weight: 400;
-  font-size: 30px;
-  text-align: center;
-  color: transparent;
-`;
+import { Link } from "react-scroll";
 
 const Mask = styled.span`
   position: absolute;
@@ -28,6 +21,14 @@ const Mask = styled.span`
 
 const MenuItem = styled.li`
   position: relative;
+`;
+
+const NavLink = styled(Link)`
+  font-family: ${myTheme.fonts.secondaryFamily};
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  color: transparent;
 
   &::before {
     content: "";
@@ -42,7 +43,7 @@ const MenuItem = styled.li`
     transform: scale(0);
   }
 
-  &:hover {
+  &:hover, &.active {
     &::before {
       transform: scale(1);
     }
@@ -56,6 +57,8 @@ const MenuItem = styled.li`
     }
   }
 `;
+
+
 
 //MobileMenu
 
@@ -154,7 +157,7 @@ const DesktopMenu = styled.nav`
 `;
 
 export const S = {
-  Link,
+  NavLink,
   MenuItem,
   Mask,
   MobileMenu,
