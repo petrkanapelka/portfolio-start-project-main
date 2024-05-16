@@ -13,9 +13,9 @@ export const Testimony: React.FC = () => {
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={"column"}>
                     <S.IconWrapper>
-                        <Icon iconID='doubleQuotes'/>
+                        <Icon iconID='doubleQuotes' />
                     </S.IconWrapper>
-                    <Slider/>
+                    <Slider />
                 </FlexWrapper>
             </Container>
         </StyledTestimony>
@@ -23,6 +23,7 @@ export const Testimony: React.FC = () => {
 };
 
 const StyledTestimony = styled.section`
+    position: relative;
     ${S.IconWrapper} {
         margin: 34px 0 66px;
     }
