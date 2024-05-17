@@ -1,4 +1,5 @@
 import './App.css';
+import { GoTopBtn } from './components/goTopBtn/GoTopBtn';
 import { Particle } from './components/particle/Particle';
 import { Footer } from './layout/footer/Footer';
 import { Header } from './layout/header/Header';
@@ -13,15 +14,16 @@ import { Works } from './layout/sections/works/Works';
 function App() {
     return (
         <div className="App">
-            <Particle/>
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Works/>
-            <Testimony/>
-            <Contact/>
-            <Slogan/>
-            <Footer/>
+            <Particle />
+            <Header />
+            <Main />
+            <Skills />
+            <Works />
+            <Testimony />
+            <Contact />
+            <Slogan />
+            <Footer />
+            <GoTopBtn />
         </div>
     );
 }
