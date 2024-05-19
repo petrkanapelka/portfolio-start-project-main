@@ -4,6 +4,7 @@ import { Skill } from './skill/Skill';
 import { Container } from '../../../components/Container';
 import { S } from './Skills_Styles';
 import React from 'react';
+import { Fade } from "react-awesome-reveal";
 
 export const lorem = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem veniam neque adipisci facilis id dolorum aperiam corporis culpa alias beatae esse quis libero saepe perspiciatis velit facere natus, non architecto!"
 
@@ -47,7 +48,11 @@ export const Skills: React.FC = () => {
                 <SectionTitle>My Skills</SectionTitle>
                 <FlexWrapper wrap='wrap'>
                     {SkillData.map((skill, index) => {
-                        return <Skill key={index} iconID={skill.iconId} title={skill.title} text={skill.description}/>
+                        return (
+                            <Fade cascade>
+                                <Skill key={index} iconID={skill.iconId} title={skill.title} text={skill.description} />
+                            </Fade>
+                        )
                     })}
                 </FlexWrapper>
             </Container>
